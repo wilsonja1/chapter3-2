@@ -21,13 +21,10 @@ namespace chapter3_2
         {
             InitializeComponent();
 
-            bob = new Guy();
-            joe = new Guy();
+            bob = new Guy() { Cash = 100, Name = "bob" };
+            joe = new Guy() { Name = "joe", Cash = 50 };
 
-            joe.Name = "Joe";
-            joe.Cash = 50;
-            bob.Name = "Bob";
-            bob.Cash = 100;
+
 
             UpdateForm();
         }
