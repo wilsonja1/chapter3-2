@@ -33,11 +33,13 @@
             this.joesCashLabel = new System.Windows.Forms.Label();
             this.bobsCashLabel = new System.Windows.Forms.Label();
             this.bankCashLabel = new System.Windows.Forms.Label();
+            this.bobtojoe = new System.Windows.Forms.Button();
+            this.joetobob = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(157, 312);
+            this.button1.Location = new System.Drawing.Point(243, 234);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 59);
             this.button1.TabIndex = 0;
@@ -47,7 +49,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(514, 312);
+            this.button2.Location = new System.Drawing.Point(381, 234);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(84, 59);
             this.button2.TabIndex = 1;
@@ -58,7 +60,7 @@
             // joesCashLabel
             // 
             this.joesCashLabel.AutoSize = true;
-            this.joesCashLabel.Location = new System.Drawing.Point(157, 42);
+            this.joesCashLabel.Location = new System.Drawing.Point(163, 55);
             this.joesCashLabel.Name = "joesCashLabel";
             this.joesCashLabel.Size = new System.Drawing.Size(35, 13);
             this.joesCashLabel.TabIndex = 2;
@@ -82,11 +84,33 @@
             this.bankCashLabel.TabIndex = 4;
             this.bankCashLabel.Text = "label1";
             // 
+            // bobtojoe
+            // 
+            this.bobtojoe.Location = new System.Drawing.Point(381, 321);
+            this.bobtojoe.Name = "bobtojoe";
+            this.bobtojoe.Size = new System.Drawing.Size(84, 59);
+            this.bobtojoe.TabIndex = 6;
+            this.bobtojoe.Text = "Bob gives 5 to Joe";
+            this.bobtojoe.UseVisualStyleBackColor = true;
+            this.bobtojoe.Click += new System.EventHandler(this.bobtojoe_Click);
+            // 
+            // joetobob
+            // 
+            this.joetobob.Location = new System.Drawing.Point(243, 321);
+            this.joetobob.Name = "joetobob";
+            this.joetobob.Size = new System.Drawing.Size(75, 59);
+            this.joetobob.TabIndex = 5;
+            this.joetobob.Text = "Joe gives 10 to Bob";
+            this.joetobob.UseVisualStyleBackColor = true;
+            this.joetobob.Click += new System.EventHandler(this.joetobob_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.bobtojoe);
+            this.Controls.Add(this.joetobob);
             this.Controls.Add(this.bankCashLabel);
             this.Controls.Add(this.bobsCashLabel);
             this.Controls.Add(this.joesCashLabel);
@@ -106,6 +130,8 @@
         private System.Windows.Forms.Label joesCashLabel;
         private System.Windows.Forms.Label bobsCashLabel;
         private System.Windows.Forms.Label bankCashLabel;
+        private System.Windows.Forms.Button bobtojoe;
+        private System.Windows.Forms.Button joetobob;
     }
 }
 

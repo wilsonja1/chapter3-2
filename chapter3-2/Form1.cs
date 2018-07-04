@@ -38,7 +38,7 @@ namespace chapter3_2
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if(bank >= 10)
+            if (bank >= 10)
             {
                 bank -= joe.ReceiveCash(10);
                 UpdateForm();
@@ -52,6 +52,19 @@ namespace chapter3_2
         private void button1_Click(object sender, EventArgs e)
         {
             bank += bob.GiveCash(5);
+            UpdateForm();
+        }
+
+        private void bobtojoe_Click(object sender, EventArgs e)
+        {
+
+            joe.ReceiveCash(bob.GiveCash(5));
+            UpdateForm();
+        }
+
+        private void joetobob_Click(object sender, EventArgs e)
+        {
+            bob.ReceiveCash(joe.GiveCash(10));
             UpdateForm();
         }
     }
